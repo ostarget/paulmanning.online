@@ -1,184 +1,209 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paul Manning</title>
+
+    <title>Paul Manning | Author, Investigator & Entrepreneur</title>
+
+    <meta name="description" content="Official website of Paul Manning, bestselling author, former police investigator, entrepreneur and creator of investigative technology.">
 
     <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        body{
-            background:#101416;
-            color:#f5f5f5;
-            font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            min-height:100vh;
-            text-align:center;
-            padding:40px 20px;
+        body {
+            background: #101416;
+            color: #f5f5f5;
+            font-family: -apple-system, BlinkMacSystemFont,
+                "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center;
+            padding: 40px 20px;
         }
 
-        .container{
-            max-width:650px;
-            width:100%;
+        .container {
+            max-width: 650px;
+            width: 100%;
         }
 
-        img{
-            width:300px;
-            height:300px;
-            object-fit:cover;
-            border-radius:50%;
-            border:2px solid rgba(255,255,255,.15);
-            box-shadow:0 20px 60px rgba(0,0,0,.5);
-            margin-bottom:30px;
+        .profile {
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 2px solid rgba(255,255,255,.15);
+            box-shadow: 0 20px 60px rgba(0,0,0,.5);
+            margin-bottom: 30px;
         }
 
-        h1{
-            font-size:4rem;
-            margin-bottom:10px;
-            letter-spacing:-2px;
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 15px;
+            letter-spacing: -2px;
         }
 
-        h2{
-            font-size:2rem;
-            font-weight:500;
-            margin-bottom:12px;
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin-bottom: 25px;
         }
 
-        h3{
-            font-size:1.15rem;
-            font-weight:400;
-            letter-spacing:2px;
-            color:#c9a95e;
-            margin-bottom:30px;
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 400;
+            letter-spacing: 2px;
+            color: #c9a95e;
+            margin-bottom: 35px;
         }
 
-        p{
-            color:#bbbbbb;
-            font-size:1.1rem;
-            line-height:1.8;
-            margin-bottom:35px;
+        p {
+            color: #bbbbbb;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 30px;
         }
 
-        /* MAIN FACEBOOK BUTTON */
-
-        .facebook-main{
-            display:block;
-            width:100%;
-            margin:0 auto 40px;
-            padding:18px 25px;
-            background:#1877F2;
-            color:white;
-            text-decoration:none;
-            border-radius:10px;
-            font-size:1.35rem;
-            font-weight:700;
-            transition:.2s ease;
-            box-shadow:0 10px 30px rgba(0,0,0,.35);
+        .section {
+            margin-top: 55px;
         }
 
-        .facebook-main span{
-            display:block;
-            margin-top:5px;
-            font-size:.95rem;
-            font-weight:400;
-            opacity:.9;
+        .section h2 {
+            color: #f5f5f5;
+            margin-bottom: 25px;
         }
 
-        .facebook-main:hover{
-            transform:translateY(-2px);
-            opacity:.92;
+        .highlight {
+            color: #c9a95e;
         }
 
-        .social a{
-            display:inline-block;
-            margin:6px;
-            padding:12px 24px;
-            border:1px solid rgba(255,255,255,.2);
-            border-radius:40px;
-            color:white;
-            text-decoration:none;
-            transition:.25s;
+        .facebook-main {
+            display: block;
+            width: 100%;
+            margin: 35px auto 45px;
+            padding: 18px 25px;
+            background: #1877F2;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 1.35rem;
+            font-weight: 700;
+            transition: .2s ease;
+            box-shadow: 0 10px 30px rgba(0,0,0,.35);
         }
 
-        .social a:hover{
-            background:white;
-            color:#101416;
+        .facebook-main span {
+            display: block;
+            margin-top: 5px;
+            font-size: .95rem;
+            font-weight: 400;
+            opacity: .9;
         }
 
-        .commitments{
-            margin:35px 0 60px;
+        .facebook-main:hover {
+            transform: translateY(-2px);
+            opacity: .92;
         }
 
-        .commitments div{
-            width:100%;
-            margin:12px 0;
-            padding:14px 22px;
-            background:rgba(255,255,255,.035);
-            border:1px solid rgba(255,255,255,.08);
-            border-radius:8px;
-            color:#bbbbbb;
-            font-size:1.05rem;
-            font-weight:400;
-            line-height:1.6;
-            text-align:left;
-            transition:.2s ease;
+        .social {
+            margin-top: 45px;
         }
 
-        .commitments div:hover{
-            background:rgba(255,255,255,.06);
-            border-color:#c9a95e;
+        .social a {
+            display: inline-block;
+            margin: 6px;
+            padding: 12px 24px;
+            border: 1px solid rgba(255,255,255,.2);
+            border-radius: 40px;
+            color: white;
+            text-decoration: none;
+            transition: .25s;
         }
 
-        .commitments-title{
-            margin-bottom:35px;
+        .social a:hover {
+            background: white;
+            color: #101416;
         }
 
-        footer{
-            margin-top:40px;
-            color:#666;
-            font-size:.9rem;
+        .book-button {
+            display: inline-block;
+            background: #c9a95e;
+            color: #101416;
+            padding: 14px 30px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
         }
 
-        .amazon-button{
-            display:inline-block;
-            background:#FF9900;
-            color:#111;
-            padding:14px 30px;
-            border-radius:40px;
-            text-decoration:none;
-            font-weight:bold;
+        .book-button:hover {
+            opacity: .9;
         }
 
-        .amazon-button:hover{
-            opacity:.9;
+        .projects {
+            margin-top: 30px;
         }
 
-        @media(max-width:600px){
+        .project {
+            margin: 15px 0;
+            padding: 22px;
+            background: rgba(255,255,255,.035);
+            border: 1px solid rgba(255,255,255,.08);
+            border-radius: 10px;
+            text-align: left;
+        }
 
-            h1{
-                font-size:3rem;
+        .project h3 {
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+
+        .project p {
+            margin-bottom: 0;
+            font-size: 1rem;
+        }
+
+        .project a {
+            color: #c9a95e;
+            text-decoration: none;
+        }
+
+        .project a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 65px;
+            color: #666;
+            font-size: .9rem;
+        }
+
+        @media(max-width:600px) {
+
+            h1 {
+                font-size: 3rem;
             }
 
-            h2{
-                font-size:1.6rem;
+            h2 {
+                font-size: 1.5rem;
             }
 
-            img{
-                width:250px;
-                height:250px;
+            .profile {
+                width: 250px;
+                height: 250px;
             }
 
-            .facebook-main{
-                font-size:1.2rem;
-                padding:17px 18px;
+            .facebook-main {
+                font-size: 1.2rem;
+                padding: 17px 18px;
             }
         }
     </style>
@@ -188,15 +213,22 @@
 
 <div class="container">
 
-    <img src="paul-manning.jpg" alt="Paul Manning">
+    <img
+        class="profile"
+        src="paul-manning.jpg"
+        alt="Paul Manning"
+    >
 
     <h1>Paul Manning</h1>
 
-    <h2>Candidate for Mayor of Niagara Falls</h2>
+    <h3>
+        AUTHOR • INVESTIGATOR • ENTREPRENEUR
+    </h3>
 
-    <h3>Transparency • Accountability • Fiscal Responsibility</h3>
-
-    <!-- MAIN FACEBOOK BUTTON -->
+    <p>
+        Bestselling author, former military and police investigator,
+        entrepreneur and technology innovator.
+    </p>
 
     <a
         class="facebook-main"
@@ -204,100 +236,191 @@
         target="_blank"
         rel="noopener noreferrer"
     >
-        Follow Manning For Mayor on Facebook
-        <span>Questions • Answers • Updates • Discussion</span>
+        Follow Paul Manning on Facebook
+        <span>
+            Writing • Investigations • Commentary • Updates
+        </span>
     </a>
 
-    <p>
-        Paul Manning is a bestselling author, optioned screenwriter, entrepreneur and former military and police investigator with more than three decades of experience in complex investigations, leadership and public service. His work has taken him from frontline policing and undercover operations to business ownership and the development of technology designed to improve accountability and investigative integrity.
-    </p>
+    <div class="section">
 
-    <p>
-        He is the author of <em>Ten Seventy Eight: An Undercover Officer's Battle Against Organized Crime and Police Corruption</em>, an Amazon bestseller based on his experiences investigating organized crime. His screenwriting work has been optioned for development, and he continues to write while building innovative investigative platforms including OSTarget and SignalTrak. Based in Niagara Falls, Ontario, Paul also writes on policing, leadership, technology and public policy.
-    </p>
+        <h2>About Paul Manning</h2>
 
-    <h2>Why I'm Running?</h2>
+        <p>
+            Paul Manning is a bestselling author, entrepreneur
+            and former military and police investigator with
+            more than three decades of experience in complex
+            investigations, leadership and public service.
+        </p>
 
-    <p>
-        After more than thirty years investigating complex problems, holding organizations accountable and building businesses, I reached a simple conclusion: the same principles that solve difficult investigations also solve difficult governments.
-    </p>
+        <p>
+            His career has taken him from military policing
+            and frontline law enforcement to long-term
+            undercover operations targeting organized crime,
+            including the Mafia and outlaw motorcycle gangs.
+        </p>
 
-    <p>
-        Niagara Falls deserves leadership that asks hard questions before spending public money, demands accountability from every level of government and makes decisions based on evidence rather than politics. I'm not running because I've spent my career in politics. I'm running because I haven't.
-    </p>
+        <p>
+            Today, Paul combines his investigative experience
+            with writing, business development and the creation
+            of technology designed to improve accountability,
+            transparency and the integrity of investigative
+            records.
+        </p>
 
-    <h2>The Platform</h2>
+        <p>
+            Based in Niagara Falls, Ontario, he continues
+            to write and comment on policing, organized crime,
+            public accountability, technology and contemporary
+            issues.
+        </p>
 
-    <p>
-        I won't make promises that can't be kept. I will promise three things: transparency, accountability and fiscal responsibility. My first responsibility as Mayor would be to audit exactly where the city stands in its finances, infrastructure, contracts and long-term obligations—before asking taxpayers to fund another dollar of spending.
-    </p>
+    </div>
 
-    <h2 class="commitments-title">My Commitments</h2>
+    <div class="section">
 
-    <div style="height:25px;"></div>
+        <h2>Books & Writing</h2>
 
-    <p>✓ Commit to a 0% City property tax increase in Years 3 and 4 of my first term as Mayor.</p>
-    
-    <p>✓ A 50% reduction in homelssness over the four year term.</p>
-    
-    <p>✓ Petition the Province to introduce municipal term limits.</p>
+        <p>
+            Paul is the author of
+            <em class="highlight">Ten Seventy Eight:
+            An Undercover Officer's Battle Against Organized
+            Crime and Police Corruption</em>,
+            an Amazon bestseller based on his experiences
+            investigating organized crime.
+        </p>
 
-    <p>✓ Vote against Council pay raises during years of tax increases.</p>
+        <p>
+            He is also the author of
+            <em>Ethical Policing</em> and continues to develop
+            further nonfiction and fictional works.
+        </p>
 
-    <p>✓ Eliminate $1,000 conduct complaint filing fee.</p>
-
-    <p>✓ Complete a comprehensive review of City finances.</p>
-
-    <p>✓ Conduct a forensic audit of the previous four years.</p>
-
-    <p>✓ Move toward zero-based budgeting.</p>
-
-    <p>✓ Publish City spending and major contracts/consultant fees.</p>
-
-    <p>✓ Prioritize roads and core infrastructure.</p>
-
-    <p>✓ Hold regular public town hall meetings.</p>
-
-    <p>✓ Implementing the Expenditure Transparency Ledger (ETL) at City Hall, giving residents a searchable, public record of where their tax dollars are going.</p>
-
-    <div class="social">
+        <p>
+            <em>Ten Seventy Eight</em> is also being developed
+            as a screen production, with Paul serving as
+            an Executive Producer.
+        </p>
 
         <a
-            href="https://www.facebook.com/profile.php?id=61592693314623"
+            class="book-button"
+            href="https://10seventy8.com"
             target="_blank"
             rel="noopener noreferrer"
         >
-            Facebook
-        </a>
-
-        <a
-            href="https://x.com/mobinfiltrator"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            X
-        </a>
-
-        <a
-            href="https://www.linkedin.com/in/paul-manning-4a90029a/"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            LinkedIn
-        </a>
-
-        <a
-            href="https://www.instagram.com/mobinfiltrator/"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            Instagram
+            Explore Ten Seventy Eight
         </a>
 
     </div>
 
+    <div class="section">
+
+        <h2>Investigations & Technology</h2>
+
+        <p>
+            Drawing upon decades of operational experience,
+            Paul is involved in private investigations,
+            investigative technology and the development
+            of systems designed to strengthen evidence
+            integrity and accountability.
+        </p>
+
+        <div class="projects">
+
+            <div class="project">
+                <h3>Manning Investigations Inc.</h3>
+                <p>
+                    Professional investigative services
+                    including workplace investigations,
+                    surveillance, intelligence research
+                    and specialist consulting.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>OSTarget</h3>
+                <p>
+                    A secure operational records platform
+                    designed to protect investigative
+                    records, evidence integrity and
+                    accountability.
+                    <a href="https://ostarget.com"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                       Visit OSTarget
+                    </a>
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>SignalTrak</h3>
+                <p>
+                    An investigative intelligence and
+                    linkage platform designed to support
+                    information sharing and the identification
+                    of connections between investigations.
+                    <a href="https://signaltrak.io"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                       Visit SignalTrak
+                    </a>
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="section">
+
+        <h2>Connect With Paul</h2>
+
+        <p>
+            Follow Paul's writing, investigations,
+            commentary and current projects through
+            his social media channels.
+        </p>
+
+        <div class="social">
+
+            <a
+                href="https://www.facebook.com/profile.php?id=61592693314623"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Facebook
+            </a>
+
+            <a
+                href="https://x.com/mobinfiltrator"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                X
+            </a>
+
+            <a
+                href="https://www.linkedin.com/in/paul-manning-4a90029a/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                LinkedIn
+            </a>
+
+            <a
+                href="https://www.instagram.com/mobinfiltrator/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Instagram
+            </a>
+
+        </div>
+
+    </div>
+
     <footer>
-        © 2026 Paul Manning
+        © 2026 Paul Manning. All Rights Reserved.
     </footer>
 
 </div>
